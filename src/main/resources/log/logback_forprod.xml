@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- For assistance related to logback-translator or configuration  -->
+<!-- files in general, please contact the logback user mailing list -->
+<!-- at http://www.qos.ch/mailman/listinfo/logback-user             -->
+<!--                                                                -->
+<!-- For professional support please see                            -->
+<!--    http://www.qos.ch/shop/products/professionalSupport         -->
+<!--                                                                -->
+<configuration scan="true" scanPeriod="6 seconds">
+  <appender name="upwebMpspLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <!--See http://logback.qos.ch/manual/appenders.html#RollingFileAppender-->
+    <!--and http://logback.qos.ch/manual/appenders.html#TimeBasedRollingPolicy-->
+    <!--for further documentation-->
+    <File>log/mpsp_upweb.log</File>
+    <encoder>
+      <pattern>%d{yyyyMMddHHmmss},%m%n</pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>log/mpsp_upweb.log.%d{yyyyMMddHH}</fileNamePattern>
+    </rollingPolicy>
+  </appender>
+  <appender name="hfLoadStrategy" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <!--See http://logback.qos.ch/manual/appenders.html#RollingFileAppender-->
+    <!--and http://logback.qos.ch/manual/appenders.html#TimeBasedRollingPolicy-->
+    <!--for further documentation-->
+    <File>log/hfLoadStrategy.log</File>
+    <encoder>
+      <pattern>%d{yyyyMMddHHmmss},%m%n</pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>log/hfLoadStrategy.log.%d{yyyyMMddHH}</fileNamePattern>
+    </rollingPolicy>
+  </appender>
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{yyyyMMddHHmmss} [%t] %-5p %c{0} - %m%n</pattern>
+    </encoder>
+  </appender>
+  <appender name="upwebDetail" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <!--See http://logback.qos.ch/manual/appenders.html#RollingFileAppender-->
+    <!--and http://logback.qos.ch/manual/appenders.html#TimeBasedRollingPolicy-->
+    <!--for further documentation-->
+    <File>log/detail_upweb.log</File>
+    <encoder>
+      <pattern>%d{yyyyMMddHHmmss} [%-9t] %-5p %c{0} - %m%n</pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>log/detail_upweb.log.%d{yyyyMMddHH}</fileNamePattern>
+    </rollingPolicy>
+  </appender>
+  <logger name="upwebMpspLog" level="INFO">
+    <appender-ref ref="upwebMpspLog"/>
+  </logger>
+  <logger name="hfLoadStrategy" level="INFO">
+    <appender-ref ref="hfLoadStrategy"/>
+  </logger>
+  <logger name="org" level="ERROR"/>
+  <root level="INFO">
+    <appender-ref ref="CONSOLE"/>
+    <appender-ref ref="upwebDetail"/>
+  </root>
+</configuration>

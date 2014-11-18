@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+            http://www.springframework.org/schema/beans/spring-beans-4.0.xsd  
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+            
+    <bean id="messageService" class="com.umpay.upweb.system.service.impl.MessageServiceImpl">
+        <property name="messageSource" ref="messageSource"></property>
+        <property name="sysconfSource" ref="sysconfSource"></property>
+    </bean>
+    
+    <bean id="restService" class="com.umpay.upweb.system.service.impl.RestServiceImpl">
+        <property name="messageService" ref="messageService"></property>
+        <property name="restConnPool" ref="restConnPool"></property>
+    </bean>
+    
+    <!-- receive gateway notify queue start -->
+   	<bean id="beancreator" class="com.bs2.core.ext.BeanCreator0"/>
+   	<bean id="threadpool4service" class="com.bs2.core.ext.ThreadPoolGroup">
+         <constructor-arg index="0"><value>GWNotifyQueueTask</value></constructor-arg>
+         <constructor-arg index="1"><value>1000</value></constructor-arg>
+         <constructor-arg index="2"><value>5000</value></constructor-arg>
+         <property name="idleTimeout"><value>60000</value></property>
+         <property name="_threadgroup" ref="threadgroup4service" />
+    </bean>
+    <bean id="threadgroup4service" class="com.bs2.core.ext.ServiceThreadGroup">
+          <description>
+                com.bs2.core.ext.ServiceThreadGroup,remember the exception
+                java.lang.ThreadGroup:
+                - Ignoring constructor [public java.lang.ThreadGroup(java.lang.ThreadGroup,java.lang.String)] of bean 'threadgroup4service': could not satisfy dependencies
+                - Ignoring constructor [private java.lang.ThreadGroup()] of bean 'threadgroup4service': could not satisfy dependencies
+         </description>
+         <constructor-arg index="0"><value>threadgroup4service</value></constructor-arg>
+    </bean>
+    <bean id="gwNotifyQueue" class="com.bs2.core.ext.Service4QObj">
+          <description>gateway notify Queue Service</description>
+            <property name="_dependences">
+                <map>
+                   <entry key="m_beancreator"><ref bean="beancreator"/></entry>
+                   <entry key="m_threadgroup"><ref bean="threadgroup4service"/></entry>
+                   <entry key="m_threadpool"><ref bean="threadpool4service"/></entry>
+                   <entry key="m_classname"><value>com.umpay.upweb.system.queue.QGWNotify</value></entry>
+                </map>
+            </property>
+            <property name="_properties">
+                <props>
+                   <prop key="NAME">UPGWNotifyQ</prop>
+                </props>
+            </property>
+    </bean>
+    <!-- receive gateway notify queue end -->
+   	<bean id="clientCtrl4Rest" class="com.umpay.upweb.system.common.HttpClientControler" destroy-method="destory">
+   		<constructor-arg index="0"><value>100</value></constructor-arg>
+        <constructor-arg index="1"><value>60000</value></constructor-arg>
+   </bean>
+  	<bean id="restConnPool" class="com.umpay.upweb.system.common.RestConnPool">
+         <constructor-arg type="int">   
+			<value>1000</value>   
+		 </constructor-arg>
+		 <constructor-arg ref="clientCtrl4Rest"/>
+		<property name="loadStrategy" ref="loadStrategy_uprest" />
+   	</bean>   
+   		
+  	<bean id="logTemplateHandler" class="com.umpay.upweb.system.common.LogTemplateHandler">
+  	    <property name="temp" value="FUNCODE,RPID,MERID,GOODSID,PLATORDID,PLATTYPE,ORDERDATE,ORDERID,BUSINESSTYPE,BANKID,AMOUNT,MOBILEID,UPVERSION,UPTRANSDATE,APPID,CHANNELID,PROVCODE,AREACODE,IMSI,IMEI,SDKVERSION,SDKTYPE,ICCID,RETCODE,RETMSG"></property>
+   	</bean> 
+   	
+    <bean id="webService" class="com.umpay.upweb.web.action.service.impl.WebServiceImpl">
+    </bean>
+</beans>

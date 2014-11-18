@@ -1,0 +1,90 @@
+20141105140432,current conn state :{10.10.38.214:8690=1}
+20141105140432,get url:10.10.38.214:8690 
+20141105140432,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105140432,current conn state :{10.10.38.214:8690=1}
+20141105140432,get url:10.10.38.214:8690 
+20141105140432,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105141427,current conn state :{10.10.38.214:8690=1}
+20141105141427,get url:10.10.38.214:8690 
+20141105141427,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105141427,current conn state :{10.10.38.214:8690=1}
+20141105141427,get url:10.10.38.214:8690 
+20141105141427,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105141729,current conn state :{10.10.38.214:8690=1}
+20141105141729,get url:10.10.38.214:8690 
+20141105141730,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105141730,current conn state :{10.10.38.214:8690=1}
+20141105141730,get url:10.10.38.214:8690 
+20141105141730,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105141841,current conn state :{10.10.38.214:8690=1}
+20141105141841,get url:10.10.38.214:8690 
+20141105141841,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105141841,current conn state :{10.10.38.214:8690=1}
+20141105141841,get url:10.10.38.214:8690 
+20141105141841,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105142121,current conn state :{10.10.38.214:8690=1}
+20141105142121,get url:10.10.38.214:8690 
+20141105142121,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105142121,current conn state :{10.10.38.214:8690=1}
+20141105142121,get url:10.10.38.214:8690 
+20141105142121,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105143005,current conn state :{10.10.38.214:8690=1}
+20141105143005,get url:10.10.38.214:8690 
+20141105143005,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105143005,current conn state :{10.10.38.214:8690=1}
+20141105143005,get url:10.10.38.214:8690 
+20141105143005,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105143006,current conn state :{10.10.38.214:8690=1}
+20141105143006,get url:10.10.38.214:8690 
+20141105143006,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105143006,current conn state :{10.10.38.214:8690=1}
+20141105143006,get url:10.10.38.214:8690 
+20141105143006,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105143020,current conn state :{10.10.38.214:8690=1}
+20141105143020,get url:10.10.38.214:8690 
+20141105143020,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105143020,current conn state :{10.10.38.214:8690=1}
+20141105143020,get url:10.10.38.214:8690 
+20141105143020,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105143439,current conn state :{10.10.38.214:8690=1}
+20141105143439,get url:10.10.38.214:8690 
+20141105143439,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105143439,current conn state :{10.10.38.214:8690=1}
+20141105143439,get url:10.10.38.214:8690 
+20141105143439,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105143845,current conn state :{10.10.38.214:8690=1}
+20141105143845,get url:10.10.38.214:8690 
+20141105143845,back N,strategy type[LeastConnectionStrategy]|retCode[86801000]|url[10.10.38.214:8690]
+20141105143849,current conn state :{10.10.38.214:8690=1}
+20141105143850,get url:10.10.38.214:8690 
+20141105143850,back N,strategy type[LeastConnectionStrategy]|retCode[86801000]|url[10.10.38.214:8690]
+20141105144051,current conn state :{10.10.38.214:8690=1}
+20141105144051,get url:10.10.38.214:8690 
+20141105144051,back N,strategy type[LeastConnectionStrategy]|retCode[86801000]|url[10.10.38.214:8690]
+20141105144224,current conn state :{10.10.38.214:8690=1}
+20141105144224,get url:10.10.38.214:8690 
+20141105144224,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105144224,current conn state :{10.10.38.214:8690=1}
+20141105144224,get url:10.10.38.214:8690 
+20141105144224,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105144838,current conn state :{10.10.38.214:8690=1}
+20141105144838,get url:10.10.38.214:8690 
+20141105144838,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105144838,current conn state :{10.10.38.214:8690=1}
+20141105144838,get url:10.10.38.214:8690 
+20141105144838,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105145218,current conn state :{10.10.38.214:8690=1}
+20141105145218,get url:10.10.38.214:8690 
+20141105145218,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105145218,current conn state :{10.10.38.214:8690=1}
+20141105145218,get url:10.10.38.214:8690 
+20141105145218,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105145504,current conn state :{10.10.38.214:8690=1}
+20141105145504,get url:10.10.38.214:8690 
+20141105145504,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105145504,current conn state :{10.10.38.214:8690=1}
+20141105145504,get url:10.10.38.214:8690 
+20141105145504,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105145509,current conn state :{10.10.38.214:8690=1}
+20141105145509,get url:10.10.38.214:8690 
+20141105145509,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]

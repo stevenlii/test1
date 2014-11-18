@@ -1,0 +1,6 @@
+20141104164041,current conn state :{10.10.38.214:8690=1}
+20141104164041,get url:10.10.38.214:8690 
+20141104164041,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141104164056,current conn state :{10.10.38.214:8690=1}
+20141104164056,get url:10.10.38.214:8690 
+20141104164056,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]

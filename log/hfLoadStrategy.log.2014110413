@@ -1,0 +1,15 @@
+20141104134834,current conn state :{10.10.38.214:8690=1}
+20141104134834,get url:10.10.38.214:8690 
+20141104134834,back N,strategy type[LeastConnectionStrategy]|retCode[86801000]|url[10.10.38.214:8690]
+20141104135129,current conn state :{10.10.38.214:8690=1}
+20141104135129,get url:10.10.38.214:8690 
+20141104135129,back N,strategy type[LeastConnectionStrategy]|retCode[86801000]|url[10.10.38.214:8690]
+20141104135350,current conn state :{10.10.38.214:8690=1}
+20141104135350,get url:10.10.38.214:8690 
+20141104135350,back N,strategy type[LeastConnectionStrategy]|retCode[86801000]|url[10.10.38.214:8690]
+20141104135438,current conn state :{10.10.38.214:8690=1}
+20141104135438,get url:10.10.38.214:8690 
+20141104135438,back N,strategy type[LeastConnectionStrategy]|retCode[86801000]|url[10.10.38.214:8690]
+20141104135936,current conn state :{10.10.38.214:8690=1}
+20141104135936,get url:10.10.38.214:8690 
+20141104135936,back N,strategy type[LeastConnectionStrategy]|retCode[86801000]|url[10.10.38.214:8690]

@@ -1,0 +1,29 @@
+﻿root_path=/usr/mpsp/common/webapps/upwebbusi/
+bak_path=/usr/mpsp/common/webapps/upwebbusi/
+--------------------------------------------------------------------------
+[Modify file--Start]
+WEB-INF/classes/com/umpay/upweb/system/service/impl/RestServiceImpl.class
+WEB-INF/classes/com/umpay/upweb/system/service/RestService.class         
+WEB-INF/classes/com/umpay/upweb/system/queue/QGWNotify.class             
+WEB-INF/classes/com/umpay/upweb/system/common/Constants.class            
+WEB-INF/classes/com/umpay/upweb/system/common/FunCode.class              
+WEB-INF/classes/validate/validate.properties
+WEB-INF/classes/conf/sysconf.properties
+WEB-INF/page/pay.jsp
+WEB-INF/page/phone/pay.jsp
+WEB-INF/page/phone/noMobileId.jsp
+WEB-INF/page/noMobileId.jsp
+[Modify file--End]
+--------------------------------------------------------------------------
+[Add file--Start]
+WEB-INF/classes/com/umpay/upweb/gateway/vo/GMIDORequest.class          
+WEB-INF/classes/com/umpay/upweb/gateway/action/GMControllerAction.class
+WEB-INF/classes/com/umpay/upweb/gateway/action/GMIDOResultAction.class 
+WEB-INF/classes/com/umpay/upweb/collate/action/MerDayBillAction.class
+WEB-INF/classes/com/umpay/upweb/mer/action/MerQueryOrderAction.class
+WEB-INF/page/success.jsp
+[Add file--End]
+--------------------------------------------------------------------------
+[Delete file--Start]
+[Delete file--End]
+

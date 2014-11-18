@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+            http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+            http://www.springframework.org/schema/context  
+            http://www.springframework.org/schema/context/spring-context-4.0.xsd
+            http://www.springframework.org/schema/mvc
+            http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
+ 
+    <!--  获取Spring Application上下文-->
+    <bean id="SpringContextUtil" class="com.umpay.upweb.system.common.SpringContextUtil "/>
+    
+	
+    <!-- check param start -->
+    <bean id="validateSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basenames">
+            <list><value>classpath:validate/validate</value></list>
+        </property>
+        <property name="cacheSeconds"><value>300</value></property>
+    </bean>
+    <bean id="signSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basenames">
+            <list><value>classpath:validate/sign</value></list>
+        </property>
+        <property name="cacheSeconds"><value>3600</value></property>
+    </bean>
+    <!-- check param end -->
+   
+   	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>classpath:conf/message</value>
+			</list>
+		</property>
+		<property name="cacheSeconds">
+			<value>3600</value>
+		</property>
+		<property name="defaultEncoding" value="UTF-8" />
+	</bean>
+	
+  	   	<bean id="sysconfSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>classpath:conf/sysconf</value>
+			</list>
+		</property>
+		<property name="cacheSeconds">
+			<value>300</value>
+		</property>
+		<property name="defaultEncoding" value="UTF-8" />
+	</bean>
+	
+	<!-- load strategy config start -->
+	<bean id="loadStrategy_uprest" class="com.umpay.loadstrategy.LeastConnectionStrategy">
+		<property name="rsi" ref="rebackStrategy_uprest" />
+		<property name="exCode" value="9999,"></property>
+	</bean>
+	<bean id="rebackStrategy_uprest" class="com.umpay.loadstrategy.reback.RebackReqTimeStrategy">
+		<property name="sysId" value="8680"></property>
+		<property name="maxUrlLostNum" value="3"></property>
+		<property name="urlLostTime" value="15000"></property>
+	</bean>
+	<bean id="hfLoadStrategy4redisWriter" class="com.umpay.loadstrategy.LeastConnectionStrategy">
+		<property name="rsi">
+			<ref bean="rebackStrategy_redisWriter" />
+		</property>
+		<property name="exCode">
+			<value>9999,</value>
+		</property>
+	</bean>
+	<bean id="rebackStrategy_redisWriter" class="com.umpay.loadstrategy.reback.RebackReqTimeStrategy">
+		<property name="sysId">
+			<value>8618</value>
+		</property>
+		<property name="maxUrlLostNum">
+			<value>3</value>
+		</property>
+		<property name="urlLostTime">
+			<value>15000</value>
+		</property>
+	</bean>
+
+	<bean id="hfLoadStrategy4redisReader" class="com.umpay.loadstrategy.LeastConnectionStrategy">
+		<property name="rsi">
+			<ref bean="rebackStrategy_redisReader" />
+		</property>
+		<property name="exCode">
+			<value>9999,</value>
+		</property>
+	</bean>
+	<bean id="rebackStrategy_redisReader" class="com.umpay.loadstrategy.reback.RebackReqTimeStrategy">
+		<property name="sysId">
+			<value>8617</value>
+		</property>
+		<property name="maxUrlLostNum">
+			<value>3</value>
+		</property>
+		<property name="urlLostTime">
+			<value>15000</value>
+		</property>
+	</bean>
+
+	<bean id="configBean" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    	<property name="location"><value>classpath:conf/sysconf.properties</value></property>
+	</bean>
+
+	<bean id="configSpier" class="com.umpay.loadstrategy.configspy.ConfigSpier"
+		init-method="start" lazy-init="false">
+		<property name="changeHandler">
+			<ref bean="configHandler" />
+		</property>
+		<property name="configFileName">
+			<value>${hfLoadStrategy.conf}</value>
+		</property>
+	</bean>
+	<bean id="configHandler" class="com.umpay.loadstrategy.configspy.ConfigHandler"></bean>
+	<!-- load strategy config end -->
+</beans>

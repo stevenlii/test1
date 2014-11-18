@@ -1,0 +1,18 @@
+20141103172518 [413536612@qtp-1382393727-0] INFO  MerDayBillAction - null,null,request data : {retCode=9999, funcode=MERCXORD, paydt=20141103, merid=9996}
+20141103172520 [413536612@qtp-1382393727-0] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/procFile.do, 开始时间20141103172518979, 结束时间:20141103172519009, 处理用时:30毫秒
+20141103173011 [555551311@qtp-1382393727-1] INFO  MerDayBillAction - null,null,request data : {retCode=9999, funcode=MERCXORD, paydt=20141103, merid=9996}
+20141103173012 [555551311@qtp-1382393727-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/procFile.do, 开始时间20141103173011671, 结束时间:20141103173011700, 处理用时:29毫秒
+20141103173023 [555551311@qtp-1382393727-1] INFO  MerDayBillAction - null,null,request data : {retCode=9999, funcode=MERCXORD, paydt=20141103, merid=8996}
+20141103173023 [555551311@qtp-1382393727-1] INFO  MerDayBillAction - null,null,8996.20141103.txt 对帐文件暂时不存在！
+20141103173023 [555551311@qtp-1382393727-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/procFile.do, 开始时间20141103173023512, 结束时间:20141103173023514, 处理用时:2毫秒
+20141103173109 [555551311@qtp-1382393727-1] INFO  MerDayBillAction - null,null,request data : {retCode=9999, funcode=MERCXORD, paydt=20141103, merid=8996}
+20141103173109 [555551311@qtp-1382393727-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/searchOrder.do, 开始时间20141103173109672, 结束时间:20141103173109674, 处理用时:2毫秒
+20141103173122 [555551311@qtp-1382393727-1] INFO  MerDayBillAction - null,null,request data : {retCode=9999, funcode=MERCXORD, paydt=20141103}
+20141103173122 [555551311@qtp-1382393727-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/searchOrder.do, 开始时间20141103173122250, 结束时间:20141103173122251, 处理用时:1毫秒
+20141103173147 [555551311@qtp-1382393727-1] INFO  MerDayBillAction - null,null,request data : {retCode=9999, funcode=MERCXORD, paydt=20141103}
+20141103173147 [555551311@qtp-1382393727-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/searchOrder.do, 开始时间20141103173147145, 结束时间:20141103173147146, 处理用时:2毫秒
+20141103173149 [555551311@qtp-1382393727-1] INFO  MerDayBillAction - null,null,request data : {retCode=9999, funcode=MERCXORD, paydt=20141103}
+20141103173149 [555551311@qtp-1382393727-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/searchOrder.do, 开始时间20141103173149392, 结束时间:20141103173149393, 处理用时:1毫秒
+20141103173200 [555551311@qtp-1382393727-1] INFO  MerDayBillAction - null,null,request data : {retCode=9999, funcode=MERCXORD, paydt=20141103}
+20141103173200 [555551311@qtp-1382393727-1] INFO  MerDayBillAction - null,null,the data haven't exit!
+20141103173202 [555551311@qtp-1382393727-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/searchOrder.do, 开始时间20141103173200794, 结束时间:20141103173200824, 处理用时:30毫秒

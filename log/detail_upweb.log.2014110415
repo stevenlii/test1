@@ -1,0 +1,52 @@
+20141104150129 [1747698677@qtp-899205949-0] INFO  MerDayBillAction - null,null,request data : {retCode=9999, orderdate=20141103, funcode=MERCXORD, merid=9996}
+20141104150129 [1747698677@qtp-899205949-0] INFO  MerDayBillAction - null,null,9996.20141103.txt 对帐文件暂时不存在！
+20141104150130 [1747698677@qtp-899205949-0] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/procFile.do, 开始时间20141104150129605, 结束时间:20141104150129659, 处理用时:54毫秒
+20141104150152 [1747698677@qtp-899205949-0] INFO  MerDayBillAction - null,null,request data : {retCode=9999, orderdate=20141103, funcode=MERCXORD, merid=9996}
+20141104150152 [1747698677@qtp-899205949-0] INFO  MerDayBillAction - null,null,9996.20141103.txt 对帐文件暂时不存在！
+20141104150152 [1747698677@qtp-899205949-0] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/procFile.do, 开始时间20141104150152456, 结束时间:20141104150152458, 处理用时:2毫秒
+20141104150154 [1747698677@qtp-899205949-0] INFO  MerDayBillAction - null,null,request data : {retCode=9999, orderdate=20141103, funcode=MERCXORD, merid=9996}
+20141104150154 [1747698677@qtp-899205949-0] INFO  MerDayBillAction - null,null,9996.20141103.txt 对帐文件暂时不存在！
+20141104150154 [1747698677@qtp-899205949-0] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/procFile.do, 开始时间20141104150154789, 结束时间:20141104150154791, 处理用时:2毫秒
+20141104150252 [672845127@qtp-899205949-1] INFO  MerDayBillAction - null,null,request data : {retCode=9999, orderdate=20141103, funcode=MERCXORD, merid=9996}
+20141104150322 [672845127@qtp-899205949-1] INFO  MerDayBillAction - null,null,9996.20141103.txt 对帐文件暂时不存在！
+20141104150323 [672845127@qtp-899205949-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/procFile.do, 开始时间20141104150252220, 结束时间:20141104150322701, 处理用时:30481毫秒
+20141104150351 [1806127242@qtp-2067178556-0] INFO  MerDayBillAction - null,null,request data : {retCode=9999, orderdate=20141103, funcode=MERCXORD, merid=9996}
+20141104150351 [1806127242@qtp-2067178556-0] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/procFile.do, 开始时间20141104150351170, 结束时间:20141104150351215, 处理用时:45毫秒
+20141104150354 [1806127242@qtp-2067178556-0] INFO  MerDayBillAction - null,null,request data : {retCode=9999, orderdate=20141103, funcode=MERCXORD, merid=9996}
+20141104150354 [1806127242@qtp-2067178556-0] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/procFile.do, 开始时间20141104150354607, 结束时间:20141104150354608, 处理用时:1毫秒
+20141104150430 [1806127242@qtp-2067178556-0] INFO  MerDayBillAction - MERCXORD,U1104150430hp6mU,request data : {retCode=9999, orderdate=20140930, funcode=MERCXORD, orderid=20140930043602, merid=9996}
+20141104150430 [1806127242@qtp-2067178556-0] INFO  DefaultCheckServiceImpl - MERCXORD,U1104150430hp6mU,doParamCheck查找的key：FUNCODE.MERCXORD.*, 获得的配置为：ORDERDATE,MERID
+20141104150430 [1806127242@qtp-2067178556-0] INFO  MerDayBillAction - MERCXORD,U1104150430hp6mU,doParamCheck pass. retCode: 0000
+20141104150430 [1806127242@qtp-2067178556-0] INFO  DefaultCheckServiceImpl - MERCXORD,U1104150430hp6mU,sign check start
+20141104150430 [1806127242@qtp-2067178556-0] INFO  MerDayBillAction - MERCXORD,U1104150430hp6mU,doSignCheck pass. retCode: 0000
+20141104150430 [1806127242@qtp-2067178556-0] INFO  MerDayBillAction - MERCXORD,U1104150430hp6mU,doIPCheck pass. retCode: 0000
+20141104150430 [1806127242@qtp-2067178556-0] INFO  RestConnPool - 入rest发送队列 当前队列size[1] end
+20141104150430 [1806127242@qtp-2067178556-0] INFO  hfLoadStrategy - current conn state :{10.10.38.214:8690=1}
+20141104150430 [1806127242@qtp-2067178556-0] INFO  hfLoadStrategy - get url:10.10.38.214:8690 
+20141104150430 [1806127242@qtp-2067178556-0] INFO  HttpClientControler - MERCXORD,U1104150430hp6mU,getHttpResGet_Form URI 请求路径:http://10.10.38.214:8690/uprestbusi/uporder/mer/U1104150430hp6mU/20140930999620140930043602.xml 
+20141104150430 [1806127242@qtp-2067178556-0] INFO  HttpClientControler - MERCXORD,U1104150430hp6mU,getHttpResGet_Form Param 请求参数:{orderdate=20140930, orderid=20140930043602, x-accept-charset=UTF-8, merid=9996} 
+20141104150430 [1806127242@qtp-2067178556-0] WARN  HttpClientControler - MERCXORD,U1104150430hp6mU,executeMethod useTime:48 
+20141104150430 [1806127242@qtp-2067178556-0] WARN  HttpClientControler - MERCXORD,U1104150430hp6mU,xstream.fromXML useTime:23 
+20141104150430 [1806127242@qtp-2067178556-0] INFO  HttpClientControler - MERCXORD,U1104150430hp6mU,getHttpResGet_Form Response 响应包体:{transdate=, bankid=BS020000, orderstate=0, amttype=02, appid=appid, BUSISPENDTIME=10, rpid=U1104150430hp6mU, merid=9996, version=1.0, channelid=0001, amount=100, retMsg=交易成功, expand=xx商户扩展信息, transid=, orderdate=20140930, imei=356871043647613, businesstype=0601, merpriv=xx商户私有信息, mercustid=, resTrace=UpOrderMerRest.DOSHOW, retCode=0000, goodsid=100, platordid=20140930163554999600000000006012, imsi=460023119357400, orderid=20140930043602, mobileid=15017568581} 
+20141104150430 [1806127242@qtp-2067178556-0] INFO  RestConnPool - MERCXORD,U1104150430hp6mU,RestConnPool doGet Result 0000:交易成功
+20141104150430 [1806127242@qtp-2067178556-0] INFO  hfLoadStrategy - back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141104150430 [1806127242@qtp-2067178556-0] INFO  RestConnPool - 出rest发送队列 当前队列size[0] end
+20141104150430 [1806127242@qtp-2067178556-0] INFO  RestConnPool - MERCXORD,U1104150430hp6mU,RestControl doGet useTime:94
+20141104150430 [1806127242@qtp-2067178556-0] INFO  upwebMpspLog - MERCXORD,U1104150430hp6mU,9996,100,20140930163554999600000000006012,,20140930,20140930043602,0601,BS020000,100,15017568581,,,appid,0001,,,,,,,,0000,交易成功,127.0.0.1,117
+20141104150430 [1806127242@qtp-2067178556-0] INFO  MerDayBillAction - MERCXORD,U1104150430hp6mU,response json: {"transdate":"","bankid":"BS020000","orderstate":0,"amttype":"02","appid":"appid","BUSISPENDTIME":10,"rpid":"U1104150430hp6mU","merid":"9996","version":"1.0","channelid":"0001","amount":100,"retMsg":"","expand":"xx商户扩展信息","transid":"","orderdate":"20140930","imei":"356871043647613","businesstype":"0601","merpriv":"xx商户私有信息","mercustid":"","funcode":"MERCXORD","resTrace":"UpOrderMerRest.DOSHOW","retCode":"0000","goodsid":"100","platordid":"20140930163554999600000000006012","imsi":"460023119357400","orderid":"20140930043602","mobileid":"15017568581"}
+20141104150430 [1806127242@qtp-2067178556-0] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/queryOrder.do, 开始时间20141104150430753, 结束时间:20141104150430949, 处理用时:196毫秒
+20141104151207 [1324217334@qtp-1806127242-0] INFO  MerDayBillAction - null,null,request data : {retCode=9999, orderdate=20141103, funcode=MERCXORD, merid=9996}
+20141104151207 [1324217334@qtp-1806127242-0] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/procFile.do, 开始时间20141104151207407, 结束时间:20141104151207427, 处理用时:20毫秒
+20141104151257 [1324217334@qtp-1079549526-1] INFO  MerDayBillAction - null,null,request data : {retCode=9999, orderdate=20141103, funcode=MERCXORD, merid=9996}
+20141104151257 [1324217334@qtp-1079549526-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/procFile.do, 开始时间20141104151257465, 结束时间:20141104151257501, 处理用时:36毫秒
+20141104151311 [1324217334@qtp-1079549526-1] INFO  MerDayBillAction - null,null,request data : {retCode=9999, orderdate=20141103, funcode=MERCXORD, merid=9996}
+20141104151311 [1324217334@qtp-1079549526-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/procFile.do, 开始时间20141104151311799, 结束时间:20141104151311801, 处理用时:2毫秒
+20141104151311 [1324217334@qtp-1079549526-1] INFO  MerDayBillAction - null,null,request data : {retCode=9999, orderdate=20141103, funcode=MERCXORD, merid=9996}
+20141104151311 [1324217334@qtp-1079549526-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/procFile.do, 开始时间20141104151311941, 结束时间:20141104151311942, 处理用时:1毫秒
+20141104151607 [1324217334@qtp-1079549526-1] INFO  MerDayBillAction - null,null,request data : {retCode=9999, orderdate=20141103, funcode=MERCXORD, merid=9996}
+20141104151607 [1324217334@qtp-1079549526-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/procFile.do, 开始时间20141104151607087, 结束时间:20141104151607112, 处理用时:25毫秒
+20141104151611 [1324217334@qtp-1079549526-1] INFO  MerDayBillAction - null,null,request data : {retCode=9999, orderdate=20141101, funcode=MERCXORD, merid=9996}
+20141104151611 [1324217334@qtp-1079549526-1] INFO  MerDayBillAction - null,null,9996.20141101.txt 对帐文件暂时不存在！
+20141104151611 [1324217334@qtp-1079549526-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/procFile.do, 开始时间20141104151611966, 结束时间:20141104151611967, 处理用时:1毫秒
+20141104151615 [1324217334@qtp-1079549526-1] INFO  MerDayBillAction - null,null,request data : {retCode=9999, orderdate=20141103, funcode=MERCXORD, merid=9996}
+20141104151615 [1324217334@qtp-1079549526-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/procFile.do, 开始时间20141104151615431, 结束时间:20141104151615432, 处理用时:1毫秒

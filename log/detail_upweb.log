@@ -1,0 +1,41 @@
+20141107101420 [1111960904@qtp-2047033626-0] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mertest/queryOrder.do, 开始时间20141107101418623, 结束时间:20141107101418646, 处理用时:23毫秒
+20141107101426 [43084472@qtp-2047033626-3] INFO  MerQueryOrder - null,null,request data : {upversion=1.0, orderdate=20140930, amttype=02, goodsinfo=, merpriv=xx商户私有信息, platType=6, appid=, funcode=MERCXORD, merid=9996, channelid=, amount=, retCode=9999, goodsid=, banktype=3, expand=, orderid=20140930043602, mobileid=15017568581}
+20141107101426 [43084472@qtp-2047033626-3] INFO  MerQueryOrder - null,null,SignCheck unsignstring merid=9996&orderdate=20140930&orderid=20140930043602&upversion=1.0
+20141107101541 [43084472@qtp-2047033626-3] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mertest/queryOrder.do, 开始时间20141107101541478, 结束时间:20141107101541478, 处理用时:0毫秒
+20141107101543 [43084472@qtp-2047033626-3] INFO  MerQueryOrder - null,null,request data : {upversion=1.0, orderdate=20140930, amttype=02, goodsinfo=, platType=6, merpriv=xx商户私有信息, appid=, funcode=MERCXORD, merid=9996, channelid=, amount=, retCode=9999, goodsid=, banktype=3, expand=, orderid=20140930043602, mobileid=15017568581}
+20141107101543 [43084472@qtp-2047033626-3] INFO  MerQueryOrder - null,null,SignCheck unsignstring merid=9996&orderdate=20140930&orderid=20140930043602&upversion=1.0
+20141107101543 [43084472@qtp-2047033626-3] ERROR AnnotationMethodHandlerExceptionResolver - Invoking request method resulted in exception : public static native long java.lang.System.currentTimeMillis()
+java.lang.IllegalArgumentException: Invalid handler method return value: 1415326543618
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver.getModelAndView(AnnotationMethodHandlerExceptionResolver.java:410) ~[org.springframework.web.servlet-3.1.0.RELEASE.jar:3.1.0.M2]
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver.doResolveException(AnnotationMethodHandlerExceptionResolver.java:140) ~[org.springframework.web.servlet-3.1.0.RELEASE.jar:3.1.0.M2]
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:136) [org.springframework.web.servlet-3.1.0.RELEASE.jar:3.1.0.M2]
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1060) [org.springframework.web.servlet-3.1.0.RELEASE.jar:3.1.0.M2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:884) [org.springframework.web.servlet-3.1.0.RELEASE.jar:3.1.0.M2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:792) [org.springframework.web.servlet-3.1.0.RELEASE.jar:3.1.0.M2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:851) [org.springframework.web.servlet-3.1.0.RELEASE.jar:3.1.0.M2]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:767) [org.springframework.web.servlet-3.1.0.RELEASE.jar:3.1.0.M2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727) [servlet-api-2.5-20081211.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820) [servlet-api-2.5-20081211.jar:na]
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1221) [jetty-6.1.26.jar:6.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88) [spring-web-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:399) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.Server.handle(Server.java:326) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:945) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582) [jetty-util-6.1.26.jar:6.1.26]
+20141107101543 [43084472@qtp-2047033626-3] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mertest/sign.do, 开始时间20141107101543570, 结束时间:20141107101541478, 处理用时:0毫秒
+20141107101655 [43084472@qtp-2047033626-3] INFO  MerQueryOrder - null,null,request data : {upversion=1.0, orderdate=20140930, amttype=02, goodsinfo=, platType=6, merpriv=xx商户私有信息, appid=, funcode=MERCXORD, merid=9996, channelid=, amount=, retCode=9999, goodsid=, banktype=3, expand=, orderid=20140930043602, mobileid=15017568581}
+20141107101655 [43084472@qtp-2047033626-3] INFO  MerQueryOrder - null,null,SignCheck unsignstring merid=9996&orderdate=20140930&orderid=20140930043602&upversion=1.0
+20141107101729 [43084472@qtp-2047033626-3] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mertest/sign.do, 开始时间20141107101633242, 结束时间:20141107101541478, 处理用时:0毫秒

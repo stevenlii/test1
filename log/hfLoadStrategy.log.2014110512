@@ -1,0 +1,33 @@
+20141105122638,current conn state :{10.10.38.214:8690=1}
+20141105122638,get url:10.10.38.214:8690 
+20141105122639,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105122928,current conn state :{10.10.38.214:8690=1}
+20141105122928,get url:10.10.38.214:8690 
+20141105122928,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105123608,current conn state :{10.10.38.214:8690=1}
+20141105123608,get url:10.10.38.214:8690 
+20141105123608,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105123658,current conn state :{10.10.38.214:8690=1}
+20141105123658,get url:10.10.38.214:8690 
+20141105123658,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105123709,current conn state :{10.10.38.214:8690=1}
+20141105123709,get url:10.10.38.214:8690 
+20141105123709,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105123757,current conn state :{10.10.38.214:8690=1}
+20141105123757,get url:10.10.38.214:8690 
+20141105123757,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105123757,current conn state :{10.10.38.214:8690=1}
+20141105123757,get url:10.10.38.214:8690 
+20141105123757,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105123932,current conn state :{10.10.38.214:8690=1}
+20141105123932,get url:10.10.38.214:8690 
+20141105123932,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105123932,current conn state :{10.10.38.214:8690=1}
+20141105123932,get url:10.10.38.214:8690 
+20141105123932,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105124322,current conn state :{10.10.38.214:8690=1}
+20141105124322,get url:10.10.38.214:8690 
+20141105124322,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141105124322,current conn state :{10.10.38.214:8690=1}
+20141105124322,get url:10.10.38.214:8690 
+20141105124322,back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]

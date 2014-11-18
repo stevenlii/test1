@@ -1,0 +1,42 @@
+20141104164041 [290340673@qtp-1806127242-1] INFO  MerDayBillAction - MERCXORD,U1104164041eHBOa,request data : {retCode=9999, orderdate=20140930, funcode=MERCXORD, orderid=20140930043602, merid=9996}
+20141104164041 [290340673@qtp-1806127242-1] INFO  DefaultCheckServiceImpl - MERCXORD,U1104164041eHBOa,doParamCheck查找的key：FUNCODE.MERCXORD.*, 获得的配置为：ORDERDATE,MERID
+20141104164041 [290340673@qtp-1806127242-1] INFO  MerDayBillAction - MERCXORD,U1104164041eHBOa,doParamCheck pass. retCode: 0000
+20141104164041 [290340673@qtp-1806127242-1] INFO  DefaultCheckServiceImpl - MERCXORD,U1104164041eHBOa,sign check start
+20141104164041 [290340673@qtp-1806127242-1] INFO  MerDayBillAction - MERCXORD,U1104164041eHBOa,doSignCheck pass. retCode: 0000
+20141104164041 [290340673@qtp-1806127242-1] INFO  MerDayBillAction - MERCXORD,U1104164041eHBOa,doIPCheck pass. retCode: 0000
+20141104164041 [290340673@qtp-1806127242-1] INFO  RestConnPool - 入rest发送队列 当前队列size[1] end
+20141104164041 [290340673@qtp-1806127242-1] INFO  hfLoadStrategy - current conn state :{10.10.38.214:8690=1}
+20141104164041 [290340673@qtp-1806127242-1] INFO  hfLoadStrategy - get url:10.10.38.214:8690 
+20141104164041 [290340673@qtp-1806127242-1] INFO  HttpClientControler - MERCXORD,U1104164041eHBOa,getHttpResGet_Form URI 请求路径:http://10.10.38.214:8690/uprestbusi/uporder/mer/U1104164041eHBOa/20140930999620140930043602.xml 
+20141104164041 [290340673@qtp-1806127242-1] INFO  HttpClientControler - MERCXORD,U1104164041eHBOa,getHttpResGet_Form Param 请求参数:{orderdate=20140930, orderid=20140930043602, x-accept-charset=UTF-8, merid=9996} 
+20141104164041 [290340673@qtp-1806127242-1] WARN  HttpClientControler - MERCXORD,U1104164041eHBOa,executeMethod useTime:164 
+20141104164041 [290340673@qtp-1806127242-1] WARN  HttpClientControler - MERCXORD,U1104164041eHBOa,xstream.fromXML useTime:42 
+20141104164041 [290340673@qtp-1806127242-1] INFO  HttpClientControler - MERCXORD,U1104164041eHBOa,getHttpResGet_Form Response 响应包体:{transdate=, bankid=BS020000, orderstate=0, amttype=02, appid=appid, BUSISPENDTIME=68, rpid=U1104164041eHBOa, merid=9996, version=1.0, channelid=0001, amount=100, retMsg=交易成功, expand=xx商户扩展信息, transid=, orderdate=20140930, imei=356871043647613, businesstype=0601, merpriv=xx商户私有信息, mercustid=, resTrace=UpOrderMerRest.DOSHOW, retCode=0000, goodsid=100, platordid=20140930163554999600000000006012, imsi=460023119357400, orderid=20140930043602, mobileid=15017568581} 
+20141104164041 [290340673@qtp-1806127242-1] INFO  RestConnPool - MERCXORD,U1104164041eHBOa,RestConnPool doGet Result 0000:交易成功
+20141104164041 [290340673@qtp-1806127242-1] INFO  hfLoadStrategy - back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141104164041 [290340673@qtp-1806127242-1] INFO  RestConnPool - 出rest发送队列 当前队列size[0] end
+20141104164041 [290340673@qtp-1806127242-1] INFO  RestConnPool - MERCXORD,U1104164041eHBOa,RestControl doGet useTime:250
+20141104164041 [290340673@qtp-1806127242-1] INFO  upwebMpspLog - MERCXORD,U1104164041eHBOa,9996,100,20140930163554999600000000006012,,20140930,20140930043602,0601,BS020000,100,15017568581,,,appid,0001,,,,,,,,0000,交易成功,127.0.0.1,282
+20141104164041 [290340673@qtp-1806127242-1] INFO  MerDayBillAction - MERCXORD,U1104164041eHBOa,response json: {"transdate":"","bankid":"BS020000","orderstate":0,"amttype":"02","appid":"appid","BUSISPENDTIME":68,"rpid":"U1104164041eHBOa","merid":"9996","version":"1.0","channelid":"0001","amount":100,"retMsg":"","expand":"xx商户扩展信息","transid":"","orderdate":"20140930","imei":"356871043647613","businesstype":"0601","merpriv":"xx商户私有信息","mercustid":"","funcode":"MERCXORD","resTrace":"UpOrderMerRest.DOSHOW","retCode":"0000","goodsid":"100","platordid":"20140930163554999600000000006012","imsi":"460023119357400","orderid":"20140930043602","mobileid":"15017568581"}
+20141104164041 [290340673@qtp-1806127242-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/queryOrder.do, 开始时间20141104164041050, 结束时间:20141104164041444, 处理用时:394毫秒
+20141104164056 [290340673@qtp-1806127242-1] INFO  MerDayBillAction - MERCXORD,U1104164056IWCPX,request data : {retCode=9999, orderdate=20140930, funcode=MERCXORD, orderid=20140930043602, merid=9996}
+20141104164056 [290340673@qtp-1806127242-1] INFO  DefaultCheckServiceImpl - MERCXORD,U1104164056IWCPX,doParamCheck查找的key：FUNCODE.MERCXORD.*, 获得的配置为：ORDERDATE,MERID
+20141104164056 [290340673@qtp-1806127242-1] INFO  MerDayBillAction - MERCXORD,U1104164056IWCPX,doParamCheck pass. retCode: 0000
+20141104164056 [290340673@qtp-1806127242-1] INFO  DefaultCheckServiceImpl - MERCXORD,U1104164056IWCPX,sign check start
+20141104164056 [290340673@qtp-1806127242-1] INFO  MerDayBillAction - MERCXORD,U1104164056IWCPX,doSignCheck pass. retCode: 0000
+20141104164056 [290340673@qtp-1806127242-1] INFO  MerDayBillAction - MERCXORD,U1104164056IWCPX,doIPCheck pass. retCode: 0000
+20141104164056 [290340673@qtp-1806127242-1] INFO  RestConnPool - 入rest发送队列 当前队列size[1] end
+20141104164056 [290340673@qtp-1806127242-1] INFO  hfLoadStrategy - current conn state :{10.10.38.214:8690=1}
+20141104164056 [290340673@qtp-1806127242-1] INFO  hfLoadStrategy - get url:10.10.38.214:8690 
+20141104164056 [290340673@qtp-1806127242-1] INFO  HttpClientControler - MERCXORD,U1104164056IWCPX,getHttpResGet_Form URI 请求路径:http://10.10.38.214:8690/uprestbusi/uporder/mer/U1104164056IWCPX/20140930999620140930043602.xml 
+20141104164056 [290340673@qtp-1806127242-1] INFO  HttpClientControler - MERCXORD,U1104164056IWCPX,getHttpResGet_Form Param 请求参数:{orderdate=20140930, orderid=20140930043602, x-accept-charset=UTF-8, merid=9996} 
+20141104164056 [290340673@qtp-1806127242-1] WARN  HttpClientControler - MERCXORD,U1104164056IWCPX,executeMethod useTime:29 
+20141104164056 [290340673@qtp-1806127242-1] WARN  HttpClientControler - MERCXORD,U1104164056IWCPX,xstream.fromXML useTime:4 
+20141104164056 [290340673@qtp-1806127242-1] INFO  HttpClientControler - MERCXORD,U1104164056IWCPX,getHttpResGet_Form Response 响应包体:{transdate=, bankid=BS020000, orderstate=0, amttype=02, appid=appid, BUSISPENDTIME=8, rpid=U1104164056IWCPX, merid=9996, version=1.0, channelid=0001, amount=100, retMsg=交易成功, expand=xx商户扩展信息, transid=, orderdate=20140930, imei=356871043647613, businesstype=0601, merpriv=xx商户私有信息, mercustid=, resTrace=UpOrderMerRest.DOSHOW, retCode=0000, goodsid=100, platordid=20140930163554999600000000006012, imsi=460023119357400, orderid=20140930043602, mobileid=15017568581} 
+20141104164056 [290340673@qtp-1806127242-1] INFO  RestConnPool - MERCXORD,U1104164056IWCPX,RestConnPool doGet Result 0000:交易成功
+20141104164056 [290340673@qtp-1806127242-1] INFO  hfLoadStrategy - back N,strategy type[LeastConnectionStrategy]|retCode[0000]|url[10.10.38.214:8690]
+20141104164056 [290340673@qtp-1806127242-1] INFO  RestConnPool - 出rest发送队列 当前队列size[0] end
+20141104164056 [290340673@qtp-1806127242-1] INFO  RestConnPool - MERCXORD,U1104164056IWCPX,RestControl doGet useTime:35
+20141104164056 [290340673@qtp-1806127242-1] INFO  upwebMpspLog - MERCXORD,U1104164056IWCPX,9996,100,20140930163554999600000000006012,,20140930,20140930043602,0601,BS020000,100,15017568581,,,appid,0001,,,,,,,,0000,交易成功,127.0.0.1,38
+20141104164056 [290340673@qtp-1806127242-1] INFO  MerDayBillAction - MERCXORD,U1104164056IWCPX,response json: {"transdate":"","bankid":"BS020000","orderstate":0,"amttype":"02","appid":"appid","BUSISPENDTIME":8,"rpid":"U1104164056IWCPX","merid":"9996","version":"1.0","channelid":"0001","amount":100,"retMsg":"","expand":"xx商户扩展信息","transid":"","orderdate":"20140930","imei":"356871043647613","businesstype":"0601","merpriv":"xx商户私有信息","mercustid":"","funcode":"MERCXORD","resTrace":"UpOrderMerRest.DOSHOW","retCode":"0000","goodsid":"100","platordid":"20140930163554999600000000006012","imsi":"460023119357400","orderid":"20140930043602","mobileid":"15017568581"}
+20141104164056 [290340673@qtp-1806127242-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/queryOrder.do, 开始时间20141104164056791, 结束时间:20141104164056832, 处理用时:41毫秒

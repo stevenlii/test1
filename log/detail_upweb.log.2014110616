@@ -1,0 +1,35 @@
+20141106162650 [1111960904@qtp-2047033626-0] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mertest/queryOrder.do, 开始时间20141106162649647, 结束时间:20141106162649665, 处理用时:18毫秒
+20141106163156 [1324217334@qtp-1079549526-1] INFO  WebUPOrderAction - WEBUPORD,U11061631566itME,request data : {upversion=1.0, orderdate=20140930, amttype=02, goodsinfo=, platType=6, merpriv=, appid=, funcode=WEBUPORD, merid=9996, channelid=, amount=, retCode=9999, goodsid=, banktype=3, returl=, expand=, gateid=HF, orderid=20140930043602, mobileid=}
+20141106163156 [1324217334@qtp-1079549526-1] INFO  RestServiceImpl - WEBUPORD,U11061631566itME,SignCheck unsignstring merid=9996&goodsid=&goodsinfo=&mobileid=&orderid=20140930043602&orderdate=20140930&amount=&amttype=02&banktype=3&platType=6&gateid=HF&returl=&merpriv=&expand=&channelid=&appid=&upversion=1.0
+20141106163158 [1324217334@qtp-1079549526-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/web/sign.do, 开始时间20141106163156372, 结束时间:20141106163156639, 处理用时:267毫秒
+20141106163159 [1324217334@qtp-1079549526-1] INFO  WebUPOrderNMOAction - WEBNMORD,U1106163159tPgTG,request data : {upversion=1.0, orderdate=20140930, amttype=02, goodsinfo=, platType=6, merpriv=, appid=, funcode=WEBNMORD, merid=9996, channelid=, amount=, sign=Xd6kyHHJlDsRY8KzK5VV0HL5WLJGCkigUcY6lCc893czeIXh8mCPnb8b+WSoPxJ6YBM9m06ododTRA3GtZ2jPUD7vGCOjXQrTrWNZT9MCpr490eXx2jZxuTlCxYYtXkvchnWxpBdbcwOSVmpwYr4wxVcwbXbmZbPg+neUW4RGKU=, retCode=9999, goodsid=, banktype=3, returl=, expand=, orderid=20140930043602, gateid=HF, mobileid=, accountid=}
+20141106163159 [1324217334@qtp-1079549526-1] INFO  RestConnPool - 入rest发送队列 当前队列size[1] end
+20141106163159 [1324217334@qtp-1079549526-1] INFO  hfLoadStrategy - current conn state :{10.10.38.214:8690=1}
+20141106163159 [1324217334@qtp-1079549526-1] INFO  hfLoadStrategy - get url:10.10.38.214:8690 
+20141106163159 [1324217334@qtp-1079549526-1] INFO  HttpClientControler - WEBNMORD,U1106163159tPgTG,getHttpResGet_Form URI 请求路径:http://10.10.38.214:8690/hfrestbusi/checktrans/common/U1106163159tPgTG/9996-.xml 
+20141106163159 [1324217334@qtp-1079549526-1] INFO  HttpClientControler - WEBNMORD,U1106163159tPgTG,getHttpResGet_Form Param 请求参数:{goodsid=, x-accept-charset=UTF-8, merid=9996} 
+20141106163159 [1324217334@qtp-1079549526-1] WARN  HttpClientControler - WEBNMORD,U1106163159tPgTG,executeMethod useTime:109 
+20141106163159 [1324217334@qtp-1079549526-1] WARN  HttpClientControler - WEBNMORD,U1106163159tPgTG,xstream.fromXML useTime:53 
+20141106163159 [1324217334@qtp-1079549526-1] INFO  HttpClientControler - WEBNMORD,U1106163159tPgTG,getHttpResGet_Form Response 响应包体:{retCode=86801000, resTrace=HfCheckTransRest.DOSHOW, MISSINGKEY=goodsid, retMsg=请求参数有误，必输参数没有值, BUSISPENDTIME=4, merid=9996} 
+20141106163159 [1324217334@qtp-1079549526-1] INFO  RestConnPool - WEBNMORD,U1106163159tPgTG,RestConnPool doGet Result 86801000:请求参数有误，必输参数没有值
+20141106163159 [1324217334@qtp-1079549526-1] INFO  hfLoadStrategy - back N,strategy type[LeastConnectionStrategy]|retCode[86801000]|url[10.10.38.214:8690]
+20141106163159 [1324217334@qtp-1079549526-1] INFO  RestConnPool - 出rest发送队列 当前队列size[0] end
+20141106163159 [1324217334@qtp-1079549526-1] INFO  RestConnPool - WEBNMORD,U1106163159tPgTG,RestControl doGet useTime:227
+20141106163159 [1324217334@qtp-1079549526-1] INFO  WebUPOrderNMOAction - WEBNMORD,U1106163159tPgTG,Info2Mer Plain Text:merid=9996&goodsid=&mobileid=&orderid=20140930043602&orderdate=20140930&amount=&amttype=02&banktype=3&merpriv=&expand=&channelid=&appid=&retCode=86801000&upversion=1.0
+20141106163159 [1324217334@qtp-1079549526-1] INFO  WebUPOrderNMOAction - WEBNMORD,U1106163159tPgTG,Info2Mer Sign Text:t+FfMeRccnLBRSblkH7Rg90LBRjMcH1hkljpi69rTmLrQTeo1+YoCg9/kq+Wc/XYPjYPw9s+72iBoVdK/2PPFzNIA77xGVOPX6hwBAd/mRCi4ajcvxv1nICjfHRRLWnx3k+jSCE0Q0PXDXZ2C1Pad7YlOcXg8wUYBOiGtEvzhAI=
+20141106163159 [1324217334@qtp-1079549526-1] INFO  upwebMpspLog - WEBNMORD,,9996,,,6,20140930,20140930043602,,,,,1.0,,,,,,,,,,,86801000,,127.0.0.1,243
+20141106163159 [1324217334@qtp-1079549526-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/web/noMobileId.do, 开始时间20141106163159149, 结束时间:20141106163159410, 处理用时:261毫秒
+20141106164630 [1324217334@qtp-1806127242-0] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mertest/queryOrder.do, 开始时间20141106164628704, 结束时间:20141106164628718, 处理用时:14毫秒
+20141106164634 [1324217334@qtp-1806127242-0] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mertest/sign.do, 开始时间20141106164634050, 结束时间:20141106164634052, 处理用时:2毫秒
+20141106164724 [1324217334@qtp-1806127242-0] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mertest/queryOrder.do, 开始时间20141106164724397, 结束时间:20141106164724398, 处理用时:1毫秒
+20141106164725 [1324217334@qtp-1806127242-0] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mertest/sign.do, 开始时间20141106164725874, 结束时间:20141106164725876, 处理用时:2毫秒
+20141106164726 [1324217334@qtp-1806127242-0] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mertest/sign.do, 开始时间20141106164726723, 结束时间:20141106164726724, 处理用时:1毫秒
+20141106165440 [1747698677@qtp-2047033626-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mertest/sign.do, 开始时间20141106165438983, 结束时间:20141106165438997, 处理用时:14毫秒
+20141106165440 [1747698677@qtp-2047033626-1] INFO  MerQueryOrderAction - MERCXORD,U1106165440SGgBe,request data : {upversion=, orderdate=, amttype=, goodsinfo=, platType=, merpriv=, appid=, funcode=MERCXORD, merid=, channelid=, amount=, sign=, retCode=9999, goodsid=, banktype=, returl=, expand=, gateid=, orderid=, mobileid=, accountid=}
+20141106165440 [1747698677@qtp-2047033626-1] INFO  DefaultCheckServiceImpl - MERCXORD,U1106165440SGgBe,doParamCheck查找的key：FUNCODE.MERCXORD.*, 获得的配置为：ORDERDATE,MERID,ORDERID,UPVERSION,SIGN
+20141106165440 [1747698677@qtp-2047033626-1] INFO  DefaultCheckServiceImpl - MERCXORD,U1106165440SGgBe,必输参数没有输入值,参数为:orderdate
+20141106165440 [1747698677@qtp-2047033626-1] INFO  MerQueryOrderAction - MERCXORD,U1106165440SGgBe,doParamCheck fail. retCode: 86811001
+20141106165440 [1747698677@qtp-2047033626-1] INFO  MerQueryOrderAction - MERCXORD,U1106165440SGgBe,SignCheck unsignstring ||||||||3|0|||||||86811001
+20141106165440 [1747698677@qtp-2047033626-1] INFO  MerQueryOrderAction - MERCXORD,U1106165440SGgBe,SignCheck unsignstring ||||||||3|0|||||||86811001
+20141106165440 [1747698677@qtp-2047033626-1] INFO  upwebMpspLog - MERCXORD,U1106165440SGgBe,,,,,,,,,,,,,,,,,,,,,,86811001,,127.0.0.1,29
+20141106165440 [1747698677@qtp-2047033626-1] INFO  LogInterceptor - 请求IP:127.0.0.1, 请求功能:/mer/queryOrder.do, 开始时间20141106165440195, 结束时间:20141106165440241, 处理用时:47毫秒

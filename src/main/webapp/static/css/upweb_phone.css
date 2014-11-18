@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+body{ font-size:16px; margin:0px auto; padding:0px; width:100%; height:auto; background-color:#ffffff; font-family:"微软雅黑"; }
+.round { border-radius: 6px; border-color:#c0c0c;}
+.clr{ clear:both;}
+em{ font-style:normal;}
+a{ text-decoration:none;} 
+.top_logo{ width:100%; height:75px; text-align:left; }
+.top_logo img{ margin:12px 0px 0px 6px;}
+
+.ctn_txt{ width:100%; height:auto;  background:#fbf9f9; border:1px solid #e2e2e2; margin:0px auto; padding:0px; }
+.ctn_title{ width:100%; margin:0px auto; padding:0px; text-align:center; height:50px; line-height:50px; font-size:18px;}
+
+.ctn_nr{ font-size:16px; margin:20px 20px 15px 20px; padding:0px;  color:#2a2a2a;}
+
+.ctn_nr dt{ margin:0px 0px 5px 0px;}
+.tel_sty{ width:55%; height:25px; border:1px solid #c0c0c; font-size:14px; color:#868686; font-family:"微软雅黑"; float:left; }
+.cor_red{ color:#f94110;}
+.font_size{ font-size:18px;}
+.sty_tit{ width:110px; text-align:right; display:inline-block; float:left;}
+.js_txt{ width:75%; display:inline-block; float:left;}
+.pay_ssh{height:30px; line-height:30px;  display:inline-block; }
+
+.red_btn{ width:96%; height: auto; background-color:#0189d7; font-size:18px; color:#ffffff; display:block; margin: 0px auto; padding:18px 0px; text-align:center; border-radius:4px; border:none;}
+.red_btn_disabled{ width:96%; height: auto; background-color:#e3e3e3; font-size:18px; color:#ffffff; display:block; margin: 0px auto; padding:18px 0px; text-align:center; border-radius:4px; border:none;}
+.red_btn:hover{ background-color:#0596de;}
+
+.zs_font{ width:96%; height:auto; margin:0px auto; padding:0px; color:#d46349; font-size:16px; line-height:20px; }
+.zs_font dt{ margin:0px 0px 5px 0px; padding:0px;}
+.wxts_sty{ width:96%; height:auto; margin:0px auto; padding:0px; color:#888888; font-size:14px;}
+
+.font_btn{ width:96%; height: auto;  font-size:20px; color:#0084de; display:block; margin: 0px auto; padding:14px 0px; text-align:center; text-decoration:underline;}
+
+.ts_ctn{ width:96%; height: auto; margin:0px auto; padding:0px; background-color:#fff; border:1px solid #e8e8e8; border-radius:4px;}
+.ts_ctn span{ margin:10px; padding:0px; display:inline-block; text-align:justify; color:#909090;}
+
+/*-----------------------------------------------支付失败------------------------------------------------------------------*/
+.dis_title{ width:100%; margin:20px 0px 0px 0px; padding:0px; text-align:center;  font-size:22px; color:#ed684e;}
+.dis_title span{ height:80px; line-height:80px;  margin:0px 0px 0px 10px; display: inline-block;}
+.suc_img{ margin:20px 0px 0px 0px; absmiddle:middle }
+.ctn_nr2{ font-size:18px; margin:0px 0px 50px 0px; padding:0px;  color:#2a2a2a; text-align: center;  }
+.ctn_nr2 dt{ margin:0px 20px 10px 40px; text-align:left;  }
+.btn{ margin:10px 0px 10px 0px; padding:0px;}
+.blue_btn{ width:96%; height: auto; background-color:#0e93cb; font-size:20px; color:#ffffff; display:block; margin: 0px auto; padding:18px 0px; text-align:center;}
+.blue_btn:hover{ background-color:#0579c8}
+
+/*-----------------------------------------------支付成功------------------------------------------------------------------*/
+.succes_title{ width:100%; margin:20px 0px 0px 0px; padding:0px; text-align:center;  font-size:22px; color:#7ea512;}
+.succes_title span{ height:80px; line-height:80px;  margin:0px 0px 0px 10px; display: inline-block;}
+.suc_img{ margin:20px 0px 0px 0px; absmiddle:middle }
+.ctn_nr2{ font-size:18px; margin:0px 0px 50px 0px; padding:0px;  color:#2a2a2a; text-align: center;  }
+
+.ctn_nr2 dt{ margin:0px 20px 10px 40px; text-align:left;  }
+.ret_back{ font-size:18px; color:#868686; margin:0px 0px 10px 0px; padding:0px; text-align:center;}
+.ret_back span{ color:#f94110;}
+
+
+/*------------------------------------------------验证码支付--------------------------------------------*/
+.name_wid{ width:100px; height:30px;  font-size:16px; line-height:30px; text-align:right; display:inline-block; float:left;}
+.yzm_sty{ width:20%; height:25px; line-height:25px; border:1px solid #c0c0c; font-size:14px; color:#868686; font-family:"微软雅黑";  float:left;}
+.yzm_btn{ width:35%;  height:31px; line-height:31px; text-align:center; border:1px solid #c0c0c0; float:left; display:inline-block; background-color:#0189d7; color:#ffffff; margin:0px 0px 0px 5px; font-size:14px;}
+.yzm_btn_disabled{ width:32%;  height:31px; line-height:31px; text-align:center; border:1px solid #c0c0c0; float:left; display:inline-block; background-color:#e3e3e3; color:#1b1b1b; margin:0px 0px 0px 10px; font-size:14px;}
+.yzm_btn img{ width:100%;height:45px; float:left;}
