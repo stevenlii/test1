@@ -1,4 +1,4 @@
-package test.com.umpay.upweb.web.action;
+package com.umpay.upweb.web.action;
 
 import java.io.Serializable;
 
@@ -26,8 +26,8 @@ public class BSOrderVO implements Serializable {
 	
 	
 	/**
-	 * 是否是绿色破解版    破解1  非破解2
-	 * 默认破解
+	 * 鏄惁鏄豢鑹茬牬瑙ｇ増    鐮磋В1  闈炵牬瑙�2
+	 * 榛樿鐮磋В
 	 */
 	private String green = "1";
 	

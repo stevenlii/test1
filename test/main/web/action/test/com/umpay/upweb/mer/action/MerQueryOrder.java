@@ -1,4 +1,4 @@
-package test.com.umpay.upweb.mer.action;
+package com.umpay.upweb.mer.action;
 
 
 import javax.servlet.http.HttpServletResponse;

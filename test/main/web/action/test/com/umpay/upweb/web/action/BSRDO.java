@@ -1,4 +1,4 @@
-package test.com.umpay.upweb.web.action;
+package com.umpay.upweb.web.action;
 
 import java.io.Serializable;
 

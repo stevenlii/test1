@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry including="conf/|log/|spring/|validate/" kind="src" output="src/main/webapp/WEB-INF/classes" path="src/main/resources"/>
-	<classpathentry kind="src" path="src/main/java/collate"/>
-	<classpathentry kind="src" path="src/main/java/gateway"/>
-	<classpathentry kind="src" path="src/main/java/mer"/>
-	<classpathentry kind="src" path="src/main/java/web"/>
-	<classpathentry kind="src" path="src/main/java/system"/>
 	<classpathentry kind="src" path="src/main/java/sdk"/>
-	<classpathentry kind="src" path="test/main/web/action"/>
+	<classpathentry kind="src" path="src/main/java/web"/>
+	<classpathentry kind="src" path="src/main/java/collate"/>
+	<classpathentry kind="src" path="src/main/java/system"/>
+	<classpathentry kind="src" path="src/main/java/mer"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="test/main/web/action/test"/>
+	<classpathentry kind="src" path="src/main/java/gateway"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
